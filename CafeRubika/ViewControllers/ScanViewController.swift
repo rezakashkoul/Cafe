@@ -11,12 +11,15 @@ class ScanViewController: UIViewController {
 
     @IBOutlet weak var mechineImage: UIImageView!
     @IBOutlet weak var helpButton: UIButton!
+    
     @IBAction func helpButtonAction(_ sender: Any) {
-        print("how does this work, tapped!")
+        AlertManager.shared.showAlert(parent: self,
+                                      title: "No data is available",
+                                      body: "Please check device instructions.",
+                                      buttonTitles: ["OK"]) { _ in
+        }
     }
-    
-    let nfcScanIdentification = "60ba1ab72e35f2d9c786c610"
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,8 +37,17 @@ class ScanViewController: UIViewController {
     
     @objc func imageTapAction() {
         fetchData()
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "SelectCoffeeViewController") as! SelectCoffeeViewController
-//        navigationController?.pushViewController(vc, animated: true)
+        if coffee?.id == nfcValidID {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "SelectCoffeeViewController") as! SelectCoffeeViewController
+            vc.data = coffee?.types.compactMap({$0.name}) ?? []
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            AlertManager.shared.showAlert(parent: self,
+                                          title: "Invalid Device!",
+                                          body: "Please contact the operator",
+                                          buttonTitles: ["OK"]) { _ in
+            }
+        }
     }
 
 }
@@ -47,7 +59,7 @@ extension ScanViewController {
         APIManager.shared.getCafeProductionData(useMockData: useMockData, completion: { result in
             switch result {
             case .success(let data):
-                cafeProduction = data
+                coffee = data
             case .failure(let error):
                 print(error.localizedDescription)
                 self.showAlertAndHandleEvent(error)
@@ -75,12 +87,17 @@ extension ScanViewController {
                         self.fetchData()
                     }
                 } else {
-                    //
+                    return
                 }
             })
         case .timeout:
             print(error)
-            AlertManager.shared.showAlert(parent: self, title: "Request timeout", body: "Please try again", buttonTitles: ["Try again", "More"], style: .alert, showCancelButton: true, completion: {index in
+            AlertManager.shared.showAlert(parent: self,
+                                          title: "Request timeout",
+                                          body: "Please try again",
+                                          buttonTitles: ["Try again", "More"],
+                                          style: .alert, showCancelButton: false,
+                                          completion: {index in
                 if index == 0 {
                     self.fetchData()
                 } else {

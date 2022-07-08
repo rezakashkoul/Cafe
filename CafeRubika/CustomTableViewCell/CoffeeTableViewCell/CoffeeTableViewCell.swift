@@ -20,10 +20,14 @@ class CoffeeTableViewCell: UITableViewCell {
     private func setupUI() {
         itemImage.layer.cornerRadius = bounds.height / 2
         itemImage.clipsToBounds = true
+        self.selectionStyle = .none
     }
     
     func setupCell(itemImage: String, itemLabel: String) {
-        self.itemImage.image = UIImage(named: itemImage)
+        if itemImage == "" {
+            self.itemImage.isHidden = true
+        }
+//        self.itemImage.image = UIImage(named: itemImage)
         self.itemLabel.text = itemLabel
     }
      

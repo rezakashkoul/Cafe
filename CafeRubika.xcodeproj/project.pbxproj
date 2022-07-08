@@ -85,8 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				F722D1A228774C79000486FB /* Helpers */,
-				F722D1992877439A000486FB /* Global */,
 				F722D17E28772B45000486FB /* Extensions */,
+				F722D1992877439A000486FB /* Global */,
 				F722D17D28772B3E000486FB /* Models */,
 				F722D18E28773C2F000486FB /* RequestManager */,
 				F722D173287723A4000486FB /* ViewControllers */,
@@ -149,8 +149,8 @@
 		F722D18628773940000486FB /* CustomTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				F722D18528773936000486FB /* MilkTableViewCell */,
 				F722D17A2877264E000486FB /* CoffeeTableViewCell */,
+				F722D18528773936000486FB /* MilkTableViewCell */,
 			);
 			path = CustomTableViewCell;
 			sourceTree = "<group>";
@@ -435,7 +435,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +464,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

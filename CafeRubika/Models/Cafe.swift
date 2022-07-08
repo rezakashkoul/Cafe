@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Cafe
 struct Cafe: Codable {
     let id: String
-    let types: [TypeItem]
+    let types: [Style]
     let sizes: [Size]
     let extras: [Extra]
     
@@ -54,7 +54,7 @@ struct Size: Codable {
 }
 
 // MARK: - TypeItem
-struct TypeItem: Codable {
+struct Style: Codable {
     let id, name: String
     let sizes, extras: [String]
     
