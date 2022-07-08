@@ -1,5 +1,5 @@
 //
-//  MilkItemsTableViewCell.swift
+//  SubSelectionDetailsTableViewCell.swift
 //  CafeRubika
 //
 //  Created by Reza Kashkoul on 16-Tir-1401 .
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MilkItemsTableViewCell: UITableViewCell {
+class SubSelectionDetailsTableViewCell: UITableViewCell {
 
 //    @IBOutlet weak var itemCheckBox: UIImageView!
     @IBOutlet weak var itemLabel: UILabel!
@@ -15,6 +15,7 @@ class MilkItemsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 //        setupUI()
+        selectionStyle = .none
     }
     
 //    private func setupUI() {

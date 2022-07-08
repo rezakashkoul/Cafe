@@ -22,8 +22,12 @@ class ScanViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.slideLeftViews(delay: 0.2)
     }
     
     func setupUI() {
@@ -63,10 +67,8 @@ extension ScanViewController {
             case .failure(let error):
                 print(error.localizedDescription)
                 self.showAlertAndHandleEvent(error)
-                    
             }
         })
-    
     }
 }
 

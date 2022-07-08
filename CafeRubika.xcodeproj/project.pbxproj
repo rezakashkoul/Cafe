@@ -19,14 +19,15 @@
 		F722D17928772642000486FB /* CoffeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F722D17728772642000486FB /* CoffeeTableViewCell.xib */; };
 		F722D17C28772B1A000486FB /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D17B28772B1A000486FB /* Cafe.swift */; };
 		F722D18028772C0D000486FB /* mockAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = F722D17F28772C0D000486FB /* mockAPI.json */; };
-		F722D1832877392F000486FB /* MilkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D1812877392F000486FB /* MilkTableViewCell.swift */; };
-		F722D1842877392F000486FB /* MilkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F722D1822877392F000486FB /* MilkTableViewCell.xib */; };
-		F722D18928773AEA000486FB /* MilkItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D18728773AEA000486FB /* MilkItemsTableViewCell.swift */; };
-		F722D18A28773AEA000486FB /* MilkItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F722D18828773AEA000486FB /* MilkItemsTableViewCell.xib */; };
+		F722D1832877392F000486FB /* ExtraTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D1812877392F000486FB /* ExtraTableViewCell.swift */; };
+		F722D1842877392F000486FB /* ExtraTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F722D1822877392F000486FB /* ExtraTableViewCell.xib */; };
+		F722D18928773AEA000486FB /* SubSelectionDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D18728773AEA000486FB /* SubSelectionDetailsTableViewCell.swift */; };
+		F722D18A28773AEA000486FB /* SubSelectionDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F722D18828773AEA000486FB /* SubSelectionDetailsTableViewCell.xib */; };
 		F722D18D28773C1E000486FB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D18C28773C1E000486FB /* APIManager.swift */; };
 		F722D19828774391000486FB /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D19728774391000486FB /* GlobalVariables.swift */; };
 		F722D19F28774782000486FB /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D19E28774781000486FB /* MockData.swift */; };
 		F722D1A128774C75000486FB /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D1A028774C75000486FB /* AlertManager.swift */; };
+		F7EEBF7728786CD40088F50E /* SlideUpAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EEBF7628786CD40088F50E /* SlideUpAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,14 +45,15 @@
 		F722D17728772642000486FB /* CoffeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeTableViewCell.xib; sourceTree = "<group>"; };
 		F722D17B28772B1A000486FB /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		F722D17F28772C0D000486FB /* mockAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockAPI.json; sourceTree = "<group>"; };
-		F722D1812877392F000486FB /* MilkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkTableViewCell.swift; sourceTree = "<group>"; };
-		F722D1822877392F000486FB /* MilkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MilkTableViewCell.xib; sourceTree = "<group>"; };
-		F722D18728773AEA000486FB /* MilkItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkItemsTableViewCell.swift; sourceTree = "<group>"; };
-		F722D18828773AEA000486FB /* MilkItemsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MilkItemsTableViewCell.xib; sourceTree = "<group>"; };
+		F722D1812877392F000486FB /* ExtraTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraTableViewCell.swift; sourceTree = "<group>"; };
+		F722D1822877392F000486FB /* ExtraTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtraTableViewCell.xib; sourceTree = "<group>"; };
+		F722D18728773AEA000486FB /* SubSelectionDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubSelectionDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		F722D18828773AEA000486FB /* SubSelectionDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubSelectionDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		F722D18C28773C1E000486FB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		F722D19728774391000486FB /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		F722D19E28774781000486FB /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		F722D1A028774C75000486FB /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		F7EEBF7628786CD40088F50E /* SlideUpAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideUpAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +86,6 @@
 		F722D15C28771DDF000486FB /* CafeRubika */ = {
 			isa = PBXGroup;
 			children = (
-				F722D1A228774C79000486FB /* Helpers */,
 				F722D17E28772B45000486FB /* Extensions */,
 				F722D1992877439A000486FB /* Global */,
 				F722D17D28772B3E000486FB /* Models */,
@@ -94,8 +95,9 @@
 				F722D16328771DDF000486FB /* Main.storyboard */,
 				F722D15F28771DDF000486FB /* SceneDelegate.swift */,
 				F722D15D28771DDF000486FB /* AppDelegate.swift */,
-				F722D17F28772C0D000486FB /* mockAPI.json */,
 				F722D16628771DE2000486FB /* Assets.xcassets */,
+				F722D1A228774C79000486FB /* Helpers */,
+				F7EEBF78287873510088F50E /* Resources */,
 				F722D16828771DE2000486FB /* LaunchScreen.storyboard */,
 				F722D16B28771DE2000486FB /* Info.plist */,
 			);
@@ -139,8 +141,8 @@
 		F722D18528773936000486FB /* MilkTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				F722D1812877392F000486FB /* MilkTableViewCell.swift */,
-				F722D1822877392F000486FB /* MilkTableViewCell.xib */,
+				F722D1812877392F000486FB /* ExtraTableViewCell.swift */,
+				F722D1822877392F000486FB /* ExtraTableViewCell.xib */,
 				F722D18B28773AF0000486FB /* MilkItemsTableViewCell */,
 			);
 			path = MilkTableViewCell;
@@ -158,8 +160,8 @@
 		F722D18B28773AF0000486FB /* MilkItemsTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				F722D18728773AEA000486FB /* MilkItemsTableViewCell.swift */,
-				F722D18828773AEA000486FB /* MilkItemsTableViewCell.xib */,
+				F722D18728773AEA000486FB /* SubSelectionDetailsTableViewCell.swift */,
+				F722D18828773AEA000486FB /* SubSelectionDetailsTableViewCell.xib */,
 			);
 			path = MilkItemsTableViewCell;
 			sourceTree = "<group>";
@@ -185,8 +187,17 @@
 			isa = PBXGroup;
 			children = (
 				F722D1A028774C75000486FB /* AlertManager.swift */,
+				F7EEBF7628786CD40088F50E /* SlideUpAnimator.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F7EEBF78287873510088F50E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F722D17F28772C0D000486FB /* mockAPI.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F722D1842877392F000486FB /* MilkTableViewCell.xib in Resources */,
+				F722D1842877392F000486FB /* ExtraTableViewCell.xib in Resources */,
 				F722D16A28771DE2000486FB /* LaunchScreen.storyboard in Resources */,
-				F722D18A28773AEA000486FB /* MilkItemsTableViewCell.xib in Resources */,
+				F722D18A28773AEA000486FB /* SubSelectionDetailsTableViewCell.xib in Resources */,
 				F722D16728771DE2000486FB /* Assets.xcassets in Resources */,
 				F722D16528771DDF000486FB /* Main.storyboard in Resources */,
 				F722D17928772642000486FB /* CoffeeTableViewCell.xib in Resources */,
@@ -272,12 +283,13 @@
 				F722D19F28774782000486FB /* MockData.swift in Sources */,
 				F722D16228771DDF000486FB /* ScanViewController.swift in Sources */,
 				F722D15E28771DDF000486FB /* AppDelegate.swift in Sources */,
-				F722D1832877392F000486FB /* MilkTableViewCell.swift in Sources */,
+				F722D1832877392F000486FB /* ExtraTableViewCell.swift in Sources */,
+				F7EEBF7728786CD40088F50E /* SlideUpAnimator.swift in Sources */,
 				F722D1A128774C75000486FB /* AlertManager.swift in Sources */,
 				F722D16028771DDF000486FB /* SceneDelegate.swift in Sources */,
 				F722D17828772642000486FB /* CoffeeTableViewCell.swift in Sources */,
 				F722D19828774391000486FB /* GlobalVariables.swift in Sources */,
-				F722D18928773AEA000486FB /* MilkItemsTableViewCell.swift in Sources */,
+				F722D18928773AEA000486FB /* SubSelectionDetailsTableViewCell.swift in Sources */,
 				F722D17228772132000486FB /* Extensions.swift in Sources */,
 				F722D17528772485000486FB /* SelectCoffeeViewController.swift in Sources */,
 				F722D17C28772B1A000486FB /* Cafe.swift in Sources */,
