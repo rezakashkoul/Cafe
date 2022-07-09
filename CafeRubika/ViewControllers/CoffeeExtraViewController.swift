@@ -51,7 +51,6 @@ extension CoffeeExtraViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExtraTableViewCell", for: indexPath) as! ExtraTableViewCell
-        cell.itemLabel.text = data[indexPath.row]
         if let coffee = coffee {
             for i in 0...data.count-1 {
                 for extra in coffee.extras {
@@ -61,11 +60,10 @@ extension CoffeeExtraViewController: UITableViewDelegate, UITableViewDataSource 
                 }
             }
         }
+        cell.setupCell(itemLabel: data[indexPath.row])
         cell.subData = subData
-        
-
+//      cell.tableStackView.isHidden = cellIsClicked ? false : true
         return cell
-
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -81,15 +79,7 @@ extension CoffeeExtraViewController: UITableViewDelegate, UITableViewDataSource 
                 }
             }
         }
+        let indexPath = IndexPath(row: indexPath.row, section: 0)
+        tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.fade)
     }
-    
-    //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    ////        if flag {
-    ////            return CGFloat(data.count * 130)
-    ////
-    ////        } else {
-    ////            return UITableView.automaticDimension
-    ////        }
-    //    }
-    
 }

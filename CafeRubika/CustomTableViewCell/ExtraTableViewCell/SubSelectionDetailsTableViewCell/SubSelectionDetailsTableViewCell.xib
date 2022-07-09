@@ -35,6 +35,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="box" showsActivityIndicator="YES"/>
+                                <connections>
+                                    <action selector="itemCheckBoxButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QMZ-dW-Gna"/>
+                                </connections>
                             </button>
                         </subviews>
                     </stackView>
@@ -49,6 +52,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" red="0.58904379610000002" green="0.7880829573" blue="0.53975927830000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
+                <outlet property="itemCheckBoxButton" destination="1dH-6L-eSk" id="Zzb-yf-3kD"/>
                 <outlet property="itemLabel" destination="be2-PP-nIM" id="aox-Ni-hQ8"/>
             </connections>
             <point key="canvasLocation" x="-97.101449275362327" y="2.6785714285714284"/>

@@ -11,6 +11,7 @@ class ExtraTableViewCell: UITableViewCell {
 
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableStackView: UIStackView!
     
     var subData: [Subselection]? {
         didSet {
@@ -19,6 +20,8 @@ class ExtraTableViewCell: UITableViewCell {
             }
         }
     }
+    var cellIsClicked = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
@@ -52,8 +55,17 @@ extension ExtraTableViewCell: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SubSelectionDetailsTableViewCell", for: indexPath) as! SubSelectionDetailsTableViewCell
-        cell.itemLabel.text = subData?[indexPath.row].name
+        cell.delegate = self
+        cell.setupCell(itemLabel: subData?[indexPath.row].name ?? "", itemCheckBoxButton: cellIsClicked ? "box" : "box_filled")
         return cell
+    }
+    
+}
+
+extension ExtraTableViewCell: SubSelectionDetailsTableViewCellDelegate {
+    
+    func cellIsCollapse(state: Bool) {
+        cellIsClicked = state
     }
     
 }

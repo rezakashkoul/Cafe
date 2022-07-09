@@ -51,18 +51,6 @@ extension CoffeeSizeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeTableViewCell", for: indexPath) as! CoffeeTableViewCell
         cell.setupCell(itemLabel: data[indexPath.row])
         return cell
-        
-        //        if !flag {
-        //            let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeTableViewCell", for: indexPath) as! CoffeeTableViewCell
-        //            cell.setupCell(itemImage: "", itemLabel: data[indexPath.row])
-        //            return cell
-        //        } else {
-        //            let cell = tableView.dequeueReusableCell(withIdentifier: "ExtraTableViewCell", for: indexPath) as! ExtraTableViewCell
-        //            cell.itemLabel.text = data[indexPath.row]
-        //            //extras[indexPath.row]
-        //            cell.subData = data
-        //            return cell
-        //        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -81,6 +69,5 @@ extension CoffeeSizeViewController: UITableViewDelegate, UITableViewDataSource {
         vc.data = extras
         navigationController?.pushViewController(vc, animated: true)
     }
-
     
 }

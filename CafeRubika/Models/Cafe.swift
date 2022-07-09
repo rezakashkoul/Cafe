@@ -53,7 +53,7 @@ struct Size: Codable {
     }
 }
 
-// MARK: - TypeItem
+// MARK: - Style
 struct Style: Codable {
     let id, name: String
     let sizes, extras: [String]
