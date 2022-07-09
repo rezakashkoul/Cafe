@@ -9,11 +9,10 @@ import UIKit
 
 class ExtraTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var subData: [String]? {
+    var subData: [Subselection]? {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -26,13 +25,11 @@ class ExtraTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        itemImage.layer.cornerRadius = bounds.height / 2
-        itemImage.clipsToBounds = true
         setupTableView()
+        self.selectionStyle = .none
     }
     
-    func setupCell(itemImage: String, itemLabel: String) {
-        self.itemImage.image = UIImage(named: itemImage)
+    func setupCell(itemLabel: String) {
         self.itemLabel.text = itemLabel
     }
     
@@ -55,7 +52,7 @@ extension ExtraTableViewCell: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SubSelectionDetailsTableViewCell", for: indexPath) as! SubSelectionDetailsTableViewCell
-        cell.itemLabel.text = subData?[indexPath.row]
+        cell.itemLabel.text = subData?[indexPath.row].name
         return cell
     }
     

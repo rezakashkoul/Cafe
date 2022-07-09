@@ -8,7 +8,7 @@
 import UIKit
 
 class ScanViewController: UIViewController {
-
+    
     @IBOutlet weak var mechineImage: UIImageView!
     @IBOutlet weak var helpButton: UIButton!
     
@@ -19,7 +19,7 @@ class ScanViewController: UIViewController {
                                       buttonTitles: ["OK"]) { _ in
         }
     }
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -42,8 +42,7 @@ class ScanViewController: UIViewController {
     @objc func imageTapAction() {
         fetchData()
         if coffee?.id == nfcValidID {
-            let vc = storyboard?.instantiateViewController(withIdentifier: "SelectCoffeeViewController") as! SelectCoffeeViewController
-            vc.data = coffee?.types.compactMap({$0.name}) ?? []
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CoffeeStyleViewController") as! CoffeeStyleViewController
             navigationController?.pushViewController(vc, animated: true)
         } else {
             AlertManager.shared.showAlert(parent: self,
@@ -53,7 +52,7 @@ class ScanViewController: UIViewController {
             }
         }
     }
-
+    
 }
 
 //MARK: - API Request

@@ -1,5 +1,5 @@
 //
-//  CoffeeTableViewCell.swift
+//  SubSelectionDetailsTableViewCell.swift
 //  CafeRubika
 //
 //  Created by Reza Kashkoul on 16-Tir-1401 .
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class CoffeeTableViewCell: UITableViewCell {
-
+class SubSelectionDetailsTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var itemLabel: UILabel!
     
     override func awakeFromNib() {
@@ -17,11 +17,11 @@ class CoffeeTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        self.selectionStyle = .none
+        selectionStyle = .none
     }
     
     func setupCell(itemLabel: String) {
         self.itemLabel.text = itemLabel
     }
-     
+    
 }

@@ -10,11 +10,7 @@ import Foundation
 let nfcValidID = "60ba1ab72e35f2d9c786c610"
 let useMockData = true
 var coffee: Cafe?
-var userCoffee = Cafe(id: "",
-                        types: [Style(id: "", name: "", sizes: [], extras: [])],
-                        sizes: [Size(id: "", name: "", v: 0)],
-                        extras: [Extra(id: "", name: "",
-                                       subselections: [Subselection(id: "", name: "")])])
+var order = OrderID(coffeStyle: "", coffeeSize: "", coffeeExtra: "", extraSubSelections: [""])
 
 enum ApplicationError: Error {
     case general
@@ -23,3 +19,4 @@ enum ApplicationError: Error {
     case decode
     case badURL
 }
+

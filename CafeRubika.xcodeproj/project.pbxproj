@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71DD32828799CBF003DA33A /* CoffeeSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71DD32728799CBF003DA33A /* CoffeeSizeViewController.swift */; };
+		F71DD32A2879A436003DA33A /* CoffeeExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71DD3292879A436003DA33A /* CoffeeExtraViewController.swift */; };
+		F71DD32C2879C483003DA33A /* OrderID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71DD32B2879C483003DA33A /* OrderID.swift */; };
 		F722D15E28771DDF000486FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D15D28771DDF000486FB /* AppDelegate.swift */; };
 		F722D16028771DDF000486FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D15F28771DDF000486FB /* SceneDelegate.swift */; };
 		F722D16228771DDF000486FB /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D16128771DDF000486FB /* ScanViewController.swift */; };
@@ -14,7 +17,7 @@
 		F722D16728771DE2000486FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F722D16628771DE2000486FB /* Assets.xcassets */; };
 		F722D16A28771DE2000486FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F722D16828771DE2000486FB /* LaunchScreen.storyboard */; };
 		F722D17228772132000486FB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D17128772132000486FB /* Extensions.swift */; };
-		F722D17528772485000486FB /* SelectCoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D17428772485000486FB /* SelectCoffeeViewController.swift */; };
+		F722D17528772485000486FB /* CoffeeStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D17428772485000486FB /* CoffeeStyleViewController.swift */; };
 		F722D17828772642000486FB /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D17628772642000486FB /* CoffeeTableViewCell.swift */; };
 		F722D17928772642000486FB /* CoffeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F722D17728772642000486FB /* CoffeeTableViewCell.xib */; };
 		F722D17C28772B1A000486FB /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D17B28772B1A000486FB /* Cafe.swift */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F71DD32728799CBF003DA33A /* CoffeeSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSizeViewController.swift; sourceTree = "<group>"; };
+		F71DD3292879A436003DA33A /* CoffeeExtraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeExtraViewController.swift; sourceTree = "<group>"; };
+		F71DD32B2879C483003DA33A /* OrderID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderID.swift; sourceTree = "<group>"; };
 		F722D15A28771DDF000486FB /* CafeRubika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeRubika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F722D15D28771DDF000486FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F722D15F28771DDF000486FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +46,7 @@
 		F722D16928771DE2000486FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F722D16B28771DE2000486FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F722D17128772132000486FB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		F722D17428772485000486FB /* SelectCoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCoffeeViewController.swift; sourceTree = "<group>"; };
+		F722D17428772485000486FB /* CoffeeStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeStyleViewController.swift; sourceTree = "<group>"; };
 		F722D17628772642000486FB /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = "<group>"; };
 		F722D17728772642000486FB /* CoffeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeTableViewCell.xib; sourceTree = "<group>"; };
 		F722D17B28772B1A000486FB /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
@@ -108,7 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				F722D16128771DDF000486FB /* ScanViewController.swift */,
-				F722D17428772485000486FB /* SelectCoffeeViewController.swift */,
+				F722D17428772485000486FB /* CoffeeStyleViewController.swift */,
+				F71DD32728799CBF003DA33A /* CoffeeSizeViewController.swift */,
+				F71DD3292879A436003DA33A /* CoffeeExtraViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F722D17B28772B1A000486FB /* Cafe.swift */,
+				F71DD32B2879C483003DA33A /* OrderID.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,32 +147,32 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F722D18528773936000486FB /* MilkTableViewCell */ = {
+		F722D18528773936000486FB /* ExtraTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				F722D1812877392F000486FB /* ExtraTableViewCell.swift */,
 				F722D1822877392F000486FB /* ExtraTableViewCell.xib */,
-				F722D18B28773AF0000486FB /* MilkItemsTableViewCell */,
+				F722D18B28773AF0000486FB /* SubSelectionDetailsTableViewCell */,
 			);
-			path = MilkTableViewCell;
+			path = ExtraTableViewCell;
 			sourceTree = "<group>";
 		};
 		F722D18628773940000486FB /* CustomTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				F722D17A2877264E000486FB /* CoffeeTableViewCell */,
-				F722D18528773936000486FB /* MilkTableViewCell */,
+				F722D18528773936000486FB /* ExtraTableViewCell */,
 			);
 			path = CustomTableViewCell;
 			sourceTree = "<group>";
 		};
-		F722D18B28773AF0000486FB /* MilkItemsTableViewCell */ = {
+		F722D18B28773AF0000486FB /* SubSelectionDetailsTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				F722D18728773AEA000486FB /* SubSelectionDetailsTableViewCell.swift */,
 				F722D18828773AEA000486FB /* SubSelectionDetailsTableViewCell.xib */,
 			);
-			path = MilkItemsTableViewCell;
+			path = SubSelectionDetailsTableViewCell;
 			sourceTree = "<group>";
 		};
 		F722D18E28773C2F000486FB /* RequestManager */ = {
@@ -284,14 +293,17 @@
 				F722D16228771DDF000486FB /* ScanViewController.swift in Sources */,
 				F722D15E28771DDF000486FB /* AppDelegate.swift in Sources */,
 				F722D1832877392F000486FB /* ExtraTableViewCell.swift in Sources */,
+				F71DD32A2879A436003DA33A /* CoffeeExtraViewController.swift in Sources */,
 				F7EEBF7728786CD40088F50E /* SlideUpAnimator.swift in Sources */,
 				F722D1A128774C75000486FB /* AlertManager.swift in Sources */,
 				F722D16028771DDF000486FB /* SceneDelegate.swift in Sources */,
+				F71DD32C2879C483003DA33A /* OrderID.swift in Sources */,
 				F722D17828772642000486FB /* CoffeeTableViewCell.swift in Sources */,
+				F71DD32828799CBF003DA33A /* CoffeeSizeViewController.swift in Sources */,
 				F722D19828774391000486FB /* GlobalVariables.swift in Sources */,
 				F722D18928773AEA000486FB /* SubSelectionDetailsTableViewCell.swift in Sources */,
 				F722D17228772132000486FB /* Extensions.swift in Sources */,
-				F722D17528772485000486FB /* SelectCoffeeViewController.swift in Sources */,
+				F722D17528772485000486FB /* CoffeeStyleViewController.swift in Sources */,
 				F722D17C28772B1A000486FB /* Cafe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -445,6 +457,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -474,6 +487,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
