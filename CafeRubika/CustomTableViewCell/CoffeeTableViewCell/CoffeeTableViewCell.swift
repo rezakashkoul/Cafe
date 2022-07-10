@@ -8,7 +8,7 @@
 import UIKit
 
 class CoffeeTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var itemLabel: UILabel!
     
     override func awakeFromNib() {
@@ -23,5 +23,5 @@ class CoffeeTableViewCell: UITableViewCell {
     func setupCell(itemLabel: String) {
         self.itemLabel.text = itemLabel
     }
-     
+    
 }

@@ -10,7 +10,7 @@ import UIKit
 class CoffeeStyleViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-
+    
     var data: [String] = [] {
         didSet {
             DispatchQueue.main.async {[weak self] in
@@ -71,7 +71,6 @@ extension CoffeeStyleViewController: UITableViewDelegate, UITableViewDataSource 
                 }
             }
         }
-//        data = coffee.types.filter({$0.id == order.coffeStyle})[indexPath.row].sizes
         order.coffeStyle =  coffee.types.compactMap({$0.id})[indexPath.row]
         let vc = storyboard?.instantiateViewController(withIdentifier: "CoffeeSizeViewController") as! CoffeeSizeViewController
         vc.data = sizes

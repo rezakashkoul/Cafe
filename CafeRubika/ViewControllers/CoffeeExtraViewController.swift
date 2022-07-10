@@ -53,7 +53,7 @@ extension CoffeeExtraViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExtraDetailTableViewCell", for: indexPath) as! ExtraDetailTableViewCell
-                
+        
         if let buttonIsChecked = data[indexPath.section].subselections[indexPath.row].isSelected {
             let buttonImage = buttonIsChecked ? "box_filled" : "box"
             cell.checkBoxButton.setImage(UIImage(named: buttonImage), for: .normal)
@@ -70,7 +70,6 @@ extension CoffeeExtraViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 16, y: 8, width: tableView.frame.width - 32, height: 98))
         view.backgroundColor = UIColor(red: 174/255, green: 215/255, blue: 160/255, alpha: 1)
-        
         let label = UILabel(frame: CGRect(x: 16, y: 25, width: view.frame.width - 16, height: 50))
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = UIColor.white
@@ -84,12 +83,11 @@ extension CoffeeExtraViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        order.coffeeSize = data[indexPath.section].subselections[indexPath.row].id
+        order.coffeeExtra = data[indexPath.section].subselections[indexPath.row].id
         for j in 0...data[indexPath.section].subselections.count-1 {
             data[indexPath.section].subselections[j].isSelected = false
-            }
+        }
         data[indexPath.section].subselections[indexPath.row].isSelected = true
-//        print(data[indexPath.section].subselections[indexPath.row])
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
