@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the machine to start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zb-tV-kg7">
-                                <rect key="frame" x="16" y="96" width="299" height="35"/>
+                                <rect key="frame" x="16" y="148" width="299" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="rNf-20-cBG">
-                                <rect key="frame" x="0.0" y="181" width="414" height="566"/>
+                                <rect key="frame" x="0.0" y="233" width="414" height="514"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,6 +67,7 @@
                     <connections>
                         <outlet property="helpButton" destination="kTI-ls-Q7t" id="Rq1-eU-OH5"/>
                         <outlet property="mechineImage" destination="rNf-20-cBG" id="taS-y6-FnA"/>
+                        <segue destination="GPB-dc-JOv" kind="show" id="lgf-HY-dyw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DhU-NT-cwU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -91,13 +92,14 @@
                         <constraints>
                             <constraint firstItem="DhU-NT-cwU" firstAttribute="trailing" secondItem="83I-2J-roQ" secondAttribute="trailing" id="1zu-5m-Xfq"/>
                             <constraint firstItem="DhU-NT-cwU" firstAttribute="leading" secondItem="83I-2J-roQ" secondAttribute="leading" id="8ZY-04-JEn"/>
-                            <constraint firstItem="DhU-NT-cwU" firstAttribute="top" secondItem="83I-2J-roQ" secondAttribute="top" id="esm-Vt-uf1"/>
+                            <constraint firstItem="DhU-NT-cwU" firstAttribute="top" secondItem="83I-2J-roQ" secondAttribute="top" id="Ksx-up-vHy"/>
                             <constraint firstItem="83I-2J-roQ" firstAttribute="bottom" secondItem="DhU-NT-cwU" secondAttribute="bottom" id="fKT-KF-bZX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6i8-Nr-evD"/>
                     <connections>
                         <outlet property="tableView" destination="DhU-NT-cwU" id="srJ-M5-1h2"/>
+                        <segue destination="2eL-1A-YzV" kind="show" id="QgT-Qq-URx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVQ-gx-LEw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -109,8 +111,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TLx-Qu-x5u" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5SI-Kf-03k">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5SI-Kf-03k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -131,7 +133,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rNM-1z-LCX">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -144,8 +146,10 @@
                             <constraint firstItem="bx4-9q-evD" firstAttribute="trailing" secondItem="rNM-1z-LCX" secondAttribute="trailing" id="uuo-oC-25Q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Egr-rU-tnH"/>
                     <connections>
                         <outlet property="tableView" destination="rNM-1z-LCX" id="WyU-eo-p6r"/>
+                        <segue destination="vXA-Dx-ozY" kind="show" id="m1m-IZ-Jr4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OnN-LQ-LLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -161,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ceJ-f9-JOC">
-                                <rect key="frame" x="16" y="44" width="382" height="802"/>
+                                <rect key="frame" x="16" y="140" width="382" height="706"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -174,6 +178,7 @@
                             <constraint firstItem="Iiv-tw-TZD" firstAttribute="trailing" secondItem="ceJ-f9-JOC" secondAttribute="trailing" constant="16" id="l0Z-12-lAY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="L5f-ay-UZ5"/>
                     <connections>
                         <outlet property="tableView" destination="ceJ-f9-JOC" id="SnJ-Se-PlP"/>
                     </connections>
