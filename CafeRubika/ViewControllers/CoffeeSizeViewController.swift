@@ -55,12 +55,12 @@ extension CoffeeSizeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let coffee = coffee else { return }
-        var extras: [String] = []
+        var extras: [Extra] = []
         
         for i in 0...coffee.extras.count-1 {
             for id in coffee.types[indexPath.row].extras {
                 if coffee.extras[i].id == id {
-                    extras.append(coffee.extras[i].name)
+                    extras.append(coffee.extras[i])
                 }
             }
         }

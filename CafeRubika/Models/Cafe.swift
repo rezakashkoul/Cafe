@@ -23,7 +23,7 @@ struct Cafe: Codable {
 // MARK: - Extra
 struct Extra: Codable {
     let id, name: String
-    let subselections: [Subselection]
+    var subselections: [Subselection]
     
     enum CodingKeys: String, CodingKey {
         case id = "_id"
@@ -34,6 +34,7 @@ struct Extra: Codable {
 // MARK: - Subselection
 struct Subselection: Codable {
     let id, name: String
+    var isSelected: Bool?
     
     enum CodingKeys: String, CodingKey {
         case id = "_id"
